@@ -11,6 +11,42 @@ manual](https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.
 for shuf for more details. I haven't used shuf -- I wrote this because it
 didn't come standard on MacOS.
 
+### "Cookbook" 
+
+Generate a random number from 0 to 99
+
+     $ pyshuf -i 0-99 -n 1
+     73
+
+Pick a random word from the dictionary (dictionary location may vary)
+
+     $ pyshuf --input-file /usr/share/dict/words -n 1
+     irreflectiveness
+
+Shuffle the first 10 words from the dictionary
+
+     $ head /usr/share/dict/words | pyshuf
+     aardvark
+     aalii
+     Aaron
+     a
+     aa
+     Aani
+     aam
+     aardwolf
+     A
+     aal
+
+Use input from the command line
+
+     pyshuf: error: argument -e/--echo: ignored explicit argument 'cho'
+     $ pyshuf --echo one two three four five
+     four
+     two
+     three
+     one
+     five
+
 ### Implemented
 
     --e, --echo
