@@ -1,0 +1,10 @@
+usage: pyshuf [-h] [-e] [-i lo-hi] [-n count] [--input-file INPUT_FILE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e, --echo            Treat each command-line operand as an input line
+  -i lo-hi, --input-range lo-hi
+                        Act as if input came from a file containing the range of unsigned decimal integers lo...hi, one per line.
+  -n count, --head-count count
+                        Output at most count lines
+  --input-file INPUT_FILE

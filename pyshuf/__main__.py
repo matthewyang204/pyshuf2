@@ -43,7 +43,6 @@ def lo_hi(lo_hi_str):
 def main():
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--infile", type=file)
     parser.add_argument("-e","--echo",
                         action="store_true",
                         help="Treat each command-line operand as an input line")
@@ -54,6 +53,7 @@ def main():
                         metavar="count",
                         type=int,
                         help="Output at most count lines")
+    parser.add_argument("--input-file", type=file)
 
     try:
         args, unk = parser.parse_known_args()
