@@ -7,8 +7,8 @@ setup(
     description="Inexact clone of GNU shuf. Shuffles order of lines in a file.",
     license="GPL-3",
     keywords="shuf",
-    url="github.org/jakekara/pyshuf",
-    repository="github.org/jakekara/pyshuf",
+    url="https://github.org/jakekara/pyshuf",
+    repository="https://github.org/jakekara/pyshuf",
     packages=["pyshuf"],
     entry_points = {
         "console_scripts": ["pyshuf=pyshuf.__main__:main"]

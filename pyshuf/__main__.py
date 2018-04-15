@@ -60,24 +60,22 @@ def main():
     except Exception as e:
         exit_error(e)
 
-    infile = sys.stdin
-
-    if args.infile:
-        lines = open(args.infile).readlines()
+    if args.input_file:
+        lines = args.input_file.readlines()
     elif args.input_range:
         lo, hi = lo_hi(args.input_range)
         lines = [str(x) for x in range(lo, hi)]
     elif args.echo:
         lines = unk
     else:
-        lines = get_lines(infile)
+        lines = get_lines(sys.stdin)
 
     count = len(lines)
     if args.head_count:
         count = args.head_count
 
-    print ("\n".join(shuffle_lines(lines)[:count]))
-    # print(random_line(lines))
+    for line in shuffle_lines(lines)[:count]:
+        print (line.rstrip("\n"))
 
 if __name__ == "__main__":
     main()
