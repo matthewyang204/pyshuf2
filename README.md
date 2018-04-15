@@ -47,19 +47,19 @@ Use input from the command line
      one
      five
 
-### Implemented
+### Features I implemented
 
     --e, --echo
     -i, --input-range
     -n, --head-count
 
-### Not implemented
+### Features I have not implemented
 
     -o, --output-file
     --random-source
     -r, --repeat
     -z, --zero-terminated
 
-### Added
+### Features I added that are not in GNU shuf
 
     --input-file	specify an input file to read from
