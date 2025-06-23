@@ -53,7 +53,7 @@ def main():
                         metavar="count",
                         type=int,
                         help="Output at most count lines")
-    parser.add_argument("--input-file", type=file)
+    parser.add_argument("--input-file", type=argparse.FileType('r'))
 
     try:
         args, unk = parser.parse_known_args()
