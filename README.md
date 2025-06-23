@@ -8,8 +8,7 @@ An inexact clone of GNU shuf. Free, implemented in Python.
 
 Same as shuf, but the script is invoked with pyshuf2. Read the [GNU
 manual](https://www.gnu.org/software/coreutils/manual/html_node/shuf-invocation.html)
-for shuf for more details. I haven't used shuf -- I wrote this because it
-didn't come standard on MacOS.
+for shuf for more details. I created this fork because I needed it on an embedded system that ran an extremely limited copy of Linux, on 128 MB of RAM, and had only 16 GB of storage.
 
 ### "Cookbook" 
 
