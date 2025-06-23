@@ -9,7 +9,7 @@ setup(
     keywords="shuf",
     url="https://github.org/matthewyang204/pyshuf",
     repository="https://github.org/jakekara/pyshuf",
-    packages=["pyshuf"],
+    packages=["pyshuf2"],
     entry_points = {
         "console_scripts": ["pyshuf2=pyshuf2.__main__:main"]
     }
